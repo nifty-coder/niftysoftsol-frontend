@@ -1,0 +1,16 @@
+.cta-banner {
+    text-align: center;
+}
+
+.cta-card {
+    padding: 5rem 2rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-card .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
