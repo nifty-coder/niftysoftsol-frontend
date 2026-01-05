@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Features.css';
 
 const Features = () => {
@@ -25,13 +26,15 @@ const Features = () => {
             <div className="container">
                 <div className="features-grid">
                     {features.map((feature, index) => (
-                        <div key={index} className="feature-item fade-in">
-                            <div className="feature-icon-wrapper">
-                                <i className={`fa-solid ${feature.icon}`}></i>
+                        <Link key={index} to="/contact" className="feature-item-link">
+                            <div className="feature-item fade-in">
+                                <div className="feature-icon-wrapper">
+                                    <i className={`fa-solid ${feature.icon}`}></i>
+                                </div>
+                                <h3>{feature.title}</h3>
+                                <p>{feature.description}</p>
                             </div>
-                            <h3>{feature.title}</h3>
-                            <p>{feature.description}</p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
@@ -40,3 +43,4 @@ const Features = () => {
 };
 
 export default Features;
+

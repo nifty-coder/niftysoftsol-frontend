@@ -4,6 +4,13 @@
     gap: 3rem;
 }
 
+.feature-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
 .feature-item {
     text-align: center;
     padding: 2rem;

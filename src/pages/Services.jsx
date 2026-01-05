@@ -23,7 +23,8 @@ const Services = () => {
             title: "Software Solutions",
             description: "Transform your vision into reality with our end-to-end development services. From cloud-native applications to scalable enterprise architectures, we build robust, extensible software that solves complex business challenges.",
             image: "/images/Software solutions.jpg",
-            linkText: "Discuss Your Project",
+            linkText: "Discover Products",
+            link: "/products"
         }
     ];
 
@@ -39,7 +40,7 @@ const Services = () => {
                 <div className="container">
                     <div className="services-grid">
                         {services.map((service, index) => (
-                            <ServiceCard key={index} {...service} link="/contact" />
+                            <ServiceCard key={index} {...service} link={service.link || "/contact"} />
                         ))}
                     </div>
                 </div>
@@ -47,5 +48,6 @@ const Services = () => {
         </div>
     );
 };
+
 
 export default Services;
